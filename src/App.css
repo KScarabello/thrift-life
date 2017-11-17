@@ -1,25 +1,34 @@
-.video-container {
-  width: 100%;
-  height: 100vh; }
+.big-container {
+  margin: 0px; }
 
-.video {
+.video-container {
   width: 100vw;
-  position: absolute;
-  background-size: cover;
-  overflow: hidden;
-  filter: brightness(45%);
-  margin: 0px;
-  z-index: -1;
-  top: 0; }
+  overflow: hidden; }
+  .video-container .video {
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+    overflow: hidden;
+    filter: brightness(45%);
+    margin: 0px;
+    z-index: -1;
+    top: 0; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 h1 {
-  width: 90%;
   color: whitesmoke;
   font-family: 'Princess Sofia', cursive;
-  font-size: 150px;
+  font-size: 140px;
   position: relative;
   left: 50px;
-  top: 30px;
+  top: 25px;
   text-shadow: 5px 5px black;
+  transform: rotate(353deg);
   line-height: 0;
-  font-weight: bold; }
+  font-weight: bold;
+  animation: fadein 7s; }
