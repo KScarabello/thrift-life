@@ -1,3 +1,6 @@
+body {
+  display: flex; }
+
 .big-container {
   height: 100vh;
   width: 100vw; }
@@ -5,7 +8,7 @@
 .video-container {
   width: 100vw;
   overflow: hidden; }
-  .video-container .video {
+  .video-container video {
     width: 100vw;
     position: absolute;
     background-size: cover;
@@ -27,22 +30,50 @@ h1 {
   font-size: 140px;
   position: relative;
   left: 50px;
-  top: 25px;
+  top: 120px;
   text-shadow: 5px 5px black;
-  transform: rotate(353deg);
+  transform: rotate(355deg);
   line-height: 0;
+  margin: 25px;
   font-weight: bold;
-  animation: fadein 7s; }
+  animation: fadein 7s;
+  display: inline-block; }
 
-.news-box {
-  width: 0;
-  height: 0;
-  border-top: 100px solid pink;
-  border-left: 100px solid transparent;
-  position: relative;
-  right: 0;
-  top: 0;
-  z-index: -1; }
-  .news-box p {
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0px; }
+  .container .news-box {
+    width: 0px;
+    height: 0px;
+    border-top: 350px solid #672737;
+    border-left: 350px solid transparent;
+    position: relative;
+    right: 0px;
+    top: -60px;
+    z-index: 0;
+    opacity: 0.75;
+    filter: brightness(45%); }
+  .container .news-box:before {
+    content: "Thrift shopping in the news!";
     color: whitesmoke;
-    z-index: 0; }
+    z-index: 0;
+    position: absolute;
+    border: 21px solid transparent;
+    top: 100px;
+    width: 0px;
+    height: 0px; }
+
+.nav-container {
+  display: flex;
+  width: 85%;
+  height: 25%;
+  background-color: black;
+  border-radius: 20%;
+  bottom: 0px;
+  filter: brightness(75%);
+  opacity: .85;
+  position: absolute;
+  bottom: 65px;
+  left: 150px; }
