@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import Twitter from './components/Twitter';
+import Twitter from './Twitter';
 // import Tumblr from './components/Tumblr';
 // import Yelp from './components/Yelp';
 
@@ -10,6 +10,7 @@ class NavBar extends Component{
         return(
             <div className="nav-container">
                 <div className="navbox">
+                    <Twitter />
                     {/* <div className="twitter">
                         <Twitter />
 
